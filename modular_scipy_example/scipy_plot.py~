@@ -1,0 +1,10 @@
+popt, pcov = curve_fit(func, xdata, ydata)
+
+#original y data that helped create perturbed y data
+plt.plot(xdata, y, 'g')
+# perturbed y data
+plt.plot(xdata,ydata, color= 'blue', marker='*')
+#best fit y data to the perturbed data
+plt.plot(xdata, func(xdata, popt[0], popt[1], popt[2]), color='red',marker='o')
+
+plt.show()
