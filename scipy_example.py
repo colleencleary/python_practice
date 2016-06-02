@@ -2,7 +2,7 @@
 
 #let's play with scipy
 import numpy as np
-import matplotlib.plot as plt
+import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 def func(x, a, b, c):
     '''This returns an array from performing e?? on x where 
